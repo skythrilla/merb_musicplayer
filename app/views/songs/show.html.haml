@@ -1,0 +1,12 @@
+%h1
+  Songs controller, show action
+%p
+  = @song.title
+
+%p                 
+  %a{:href => "#{@song.audio.url}"}
+    Play 
+
+= link_to 'Edit',  url(:edit_song,  @song)
+|
+= link_to 'Back', url(:songs)

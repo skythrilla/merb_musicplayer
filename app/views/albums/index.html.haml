@@ -1,0 +1,15 @@
+%h1
+  Albums controller, index action
+%p
+%table
+  %tr
+  - for album in @albums
+    %tr
+      %td
+        = album.title
+      %td
+        = link_to 'Show', url(:album, album)
+      %td
+        = link_to 'Edit', url(:edit_album,  album)
+
+= link_to 'New', url(:new_album)

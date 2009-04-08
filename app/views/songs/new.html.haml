@@ -1,0 +1,10 @@
+%h1 Songs controller, new action
+
+= error_messages_for @song
+
+= form_for(@song, :action => url(:songs) ) do
+  = partial 'form'
+  %p
+    = submit "Create"
+
+= link_to 'Back', url(:songs)

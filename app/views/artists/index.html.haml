@@ -1,0 +1,16 @@
+%h1
+  Artists controller, index action
+%p
+  Edit this file in
+  %tt
+    app/views/artists/index.html.erb
+%table
+  %tr
+  - for artist in @artists
+    %tr
+      %td
+        = link_to 'Show', url(:artist, artist)
+      %td
+        = link_to 'Edit', url(:edit_artist,  artist)
+
+= link_to 'New', url(:new_artist)

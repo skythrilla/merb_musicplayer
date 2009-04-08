@@ -1,0 +1,13 @@
+%h1 Artists controller, new action
+
+%p 
+  Edit this file in 
+  %tt app/views/artists/new.html.erb
+
+= error_messages_for @artist
+
+= form_for(@artist, :action => url(:artists) ) do
+  %p
+    = submit "Create"
+
+= link_to 'Back', url(:artists)

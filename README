@@ -1,0 +1,10 @@
+Lil Merb Music player fun.
+
+Not much to it. Contains numerous overlooked necessities to be very useful yet. 
+Work in progress to scratch an itch.
+
+XSPF Player : http://musicplayer.sourceforge.net
+
+forms to upload songs
+controller to render the playlist
+

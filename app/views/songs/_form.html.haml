@@ -1,0 +1,6 @@
+%p
+  = text_field :title, :label => 'Title'
+%p 
+  = select :album_id, :label => 'Album', :collection => Album.all.map { |a| [a.id, a.title] }  
+%p 
+  = file_field :audio, :label => 'Upload Audio file'

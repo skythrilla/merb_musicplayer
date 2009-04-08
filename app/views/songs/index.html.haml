@@ -1,0 +1,16 @@
+%h1
+  Songs controller, index action
+%p
+  Edit this file in
+  %tt
+    app/views/songs/index.html.erb
+%table
+  %tr
+  - for song in @songs
+    %tr
+      %td
+        = link_to 'Show', url(:song, song)
+      %td
+        = link_to 'Edit', url(:edit_song,  song)
+
+= link_to 'New', url(:new_song)

@@ -1,0 +1,8 @@
+%h1
+  Albums controller, show action
+%p
+  = @album.title
+  
+= link_to 'Edit',  url(:edit_album,  @album)
+|
+= link_to 'Back', url(:albums)
